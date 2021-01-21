@@ -3,8 +3,6 @@ import { MuiThemeProvider, CssBaseline } from "@material-ui/core";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import theme from "./theme";
 import GlobalStyles from "./GlobalStyles";
-
-import mapboxgl from "mapbox-gl";
 import Pace from "./shared/components/Pace";
 import { SocketContext, socket } from "./context/socket";
 
