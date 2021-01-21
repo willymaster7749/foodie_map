@@ -53,6 +53,6 @@ function App() {
     );
 }
 
-serviceWorker.register();
+serviceWorker.register("./service-worker.js");
 
 export default App;
