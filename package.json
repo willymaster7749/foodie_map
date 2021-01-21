@@ -4,9 +4,9 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "start": "cd frontend/; yarn start",
-        "server": "cd frontend/; yarn server",
-	"heroku-prebuild": "cd frontend/"
+        "build": "cd frontend/; npm install",
+        "start": "cd frontend/; npm start",
+        "heroku-prebuild": "cd frontend/"
     },
     "dependencies": {
         "dotenv": "^8.2.0",
