@@ -5,7 +5,7 @@
     "license": "MIT",
     "scripts": {
         "build": "cd frontend/; npm install",
-        "start": "cd frontend/; npm start",
+        "start": "cd frontend/; npm run start",
         "heroku-prebuild": "cd frontend/"
     }
 }
