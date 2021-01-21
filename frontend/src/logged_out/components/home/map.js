@@ -45,11 +45,14 @@ export default class Map extends React.Component {
 
         // Initialize map
         const map = new mapboxgl.Map({
-            container: this.mapContainer,
-            style: "mapbox://styles/mapbox/streets-v11",
+            container: "map",
+            style: "mapbox://styles/mapbox/streets-v10",
             center: [this.state.lng, this.state.lat],
             zoom: this.state.zoom,
         });
+
+        map.resize();
+
         CommonAPI();
         var stores = JSON.parse(localStorage.getItem("Database"));
         //var stores = [RandomAPI()];
