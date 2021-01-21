@@ -67,15 +67,16 @@ export default class Map extends React.Component {
         zoom_button();
         topTen(stores);
         addMarkers();
+        map.addSource("places", {
+            type: "geojson",
+            data: stores,
+        });
 
         /* add the layer of store info */
         map.on("load", function (e) {
             console.log("enter the loading");
             /* Add the data to your map as a layer */
-            map.addSource("places", {
-                type: "geojson",
-                data: stores,
-            });
+
             console.log("phase 2");
         });
 
