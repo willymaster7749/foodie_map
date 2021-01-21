@@ -5,8 +5,8 @@
     "license": "MIT",
     "scripts": {
         "start": "cd frontend && yarn start",
-        "server": "cd backend && yarn server",
-	"heroku-prebuild": "cd backend"
+        "server": "cd frontend && yarn server",
+	"heroku-prebuild": "cd frontend"
     },
     "dependencies": {
         "dotenv": "^8.2.0",
