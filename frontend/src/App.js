@@ -1,18 +1,11 @@
 import React, { Fragment, Suspense, lazy, useEffect, useState } from "react";
 import { MuiThemeProvider, CssBaseline } from "@material-ui/core";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import theme from "./theme";
-import GlobalStyles from "./GlobalStyles";
-import * as serviceWorker from "./serviceWorker";
-import Pace from "./shared/components/Pace";
-import { SocketContext, socket } from "./context/socket";
-import {
-    CommonAPI,
-    RandomAPI,
-    BillboardAPI,
-    AddStarAPI,
-    FindRestaurantsAPI,
-} from "./commonAPI";
+import theme from "./theme.js";
+import GlobalStyles from "./GlobalStyles.js";
+import * as serviceWorker from "./serviceWorker.js";
+import Pace from "./shared/components/Pace.js";
+import { SocketContext, socket } from "./context/socket.js";
 
 const LoggedInComponent = lazy(() => import("./logged_in/components/Main"));
 
