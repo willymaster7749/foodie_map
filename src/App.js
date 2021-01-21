@@ -4,15 +4,9 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import theme from "./theme";
 import GlobalStyles from "./GlobalStyles";
 
+import mapboxgl from "mapbox-gl";
 import Pace from "./shared/components/Pace";
 import { SocketContext, socket } from "./context/socket";
-import {
-    CommonAPI,
-    RandomAPI,
-    BillboardAPI,
-    AddStarAPI,
-    FindRestaurantsAPI,
-} from "./commonAPI";
 
 const LoggedInComponent = lazy(() => import("./logged_in/components/Main"));
 
@@ -20,12 +14,6 @@ const LoggedOutComponent = lazy(() => import("./logged_out/components/Main"));
 
 function App() {
     // onClick function for random
-    const func = () => {
-        // var rand = FindRestaurantsAPI(["5fd48646a758ed0867e396ab"]);
-        var rand = RandomAPI();
-        console.log("random in App.js", rand);
-        return rand;
-    };
 
     return (
         <BrowserRouter>
