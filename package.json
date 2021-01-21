@@ -4,8 +4,8 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "start": "cd frontend && yarn start",
-        "server": "cd backend && yarn server"
+        "build": "yarn/; cd frontend/; yarn",
+        "start": "cd frontend/; yarn start"
     },
     "dependencies": {
         "dotenv": "^8.2.0",

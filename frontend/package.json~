@@ -19,6 +19,7 @@
         "bcryptjs": "^2.4.3",
         "classnames": "^2.2.6",
         "clsx": "^1.1.1",
+        "create-react-app": "^4.0.1",
         "date-fns": "^2.16.1",
         "emoji-mart": "^3.0.0",
         "js-cookie": "^2.2.0",
@@ -33,16 +34,17 @@
         "react-router-dom": "^5.2.0",
         "react-scripts": "^4.0.1",
         "recharts": "^1.8.5",
-        "socket.io-client": "^3.0.5"
-    },
-    "devDependencies": {
+        "socket.io-client": "^3.0.5",
+        "esm": "^3.2.25",
+        "express": "^4.17.1",
+        "nodemon": "^2.0.6",
         "@testing-library/jest-dom": "^5.11.6",
         "@testing-library/react": "^11.2.2",
         "@testing-library/user-event": "^12.5.0"
     },
     "scripts": {
         "start": "HTTPS=true SSL_CRT_FILE=./.cert/cert.pem SSL_KEY_FILE=./.cert/key.pem react-scripts start",
-        "build": "react-scripts build",
+        "build": "CI='' react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
