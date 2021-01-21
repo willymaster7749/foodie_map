@@ -1,8 +1,9 @@
 // import { set } from "mongoose";
+import { SOCKET_URL } from "./config";
 const io = require("socket.io-client");
 
 // define socket.io to establish connection between client and server
-const socket = io("https://https://ntu-foodiez.herokuapp.com:12004", {
+const socket = io(SOCKET_URL, {
     secure: true,
 });
 

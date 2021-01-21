@@ -20,12 +20,7 @@ const LoggedOutComponent = lazy(() => import("./logged_out/components/Main"));
 
 function App() {
     // onClick function for random
-    const func = () => {
-        // var rand = FindRestaurantsAPI(["5fd48646a758ed0867e396ab"]);
-        var rand = RandomAPI();
-        console.log("random in App.js", rand);
-        return rand;
-    };
+    localStorage.setItem("Database", []);
 
     return (
         <BrowserRouter>
