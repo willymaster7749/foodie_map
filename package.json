@@ -4,7 +4,7 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "build": "yarn/; cd frontend/; npm install react-map-gl --save/; yarn",
+        "build": "yarn/; cd frontend/; yarn",
         "start": "cd frontend/; yarn start"
     },
     "dependencies": {
