@@ -12,10 +12,10 @@ import {
     withWidth,
     isWidthUp,
 } from "@material-ui/core";
-import WaveBorder from "../../../shared/components/WaveBorder";
-import ZoomImage from "../../../shared/components/ZoomImage";
-import Map from "./map";
-import Ranking from "./ranking";
+import WaveBorder from "../../../shared/components/WaveBorder.js";
+import ZoomImage from "../../../shared/components/ZoomImage.js";
+import Map from "./map.js";
+import Ranking from "./ranking.js";
 
 const styles = (theme) => ({
     extraLargeButtonLabel: {

@@ -17,7 +17,7 @@ import HowToRegIcon from "@material-ui/icons/HowToReg";
 import LockOpenIcon from "@material-ui/icons/LockOpen";
 import BookIcon from "@material-ui/icons/Book";
 import RoomIcon from "@material-ui/icons/Room";
-import NavigationDrawer from "../../../shared/components/NavigationDrawer";
+import NavigationDrawer from "../../../shared/components/NavigationDrawer.js";
 import AuthService from "../../../services/auth.service.js";
 
 import logo from "../../../assets/pizza.png";

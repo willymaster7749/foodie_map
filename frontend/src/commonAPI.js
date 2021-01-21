@@ -1,5 +1,5 @@
 // import { set } from "mongoose";
-import { SOCKET_URL } from "./config";
+import { SOCKET_URL } from "./config.js";
 const io = require("socket.io-client");
 
 // define socket.io to establish connection between client and server

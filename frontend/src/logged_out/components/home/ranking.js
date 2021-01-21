@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Route } from "react-router-dom";
 
-import { CommonAPI, RandomAPI, BillboardAPI } from "../../../commonAPI";
+import { CommonAPI, RandomAPI, BillboardAPI } from "../../../commonAPI.js";
 import food from "../../../assets/food.jpeg";
 import sunset from "../../../assets/sunset.jpeg";
 import "../../../rank.css";

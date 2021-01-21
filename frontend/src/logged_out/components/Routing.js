@@ -1,11 +1,11 @@
 import React, { memo } from "react";
 import PropTypes from "prop-types";
 import { Switch } from "react-router-dom";
-import PropsRoute from "../../shared/components/PropsRoute";
-import Home from "./home/Home";
-import Blog from "./blog/Blog";
-import BlogPost from "./blog/BlogPost";
-import Profile from "./profile/Profile";
+import PropsRoute from "../../shared/components/PropsRoute.js";
+import Home from "./home/Home.js";
+import Blog from "./blog/Blog.js";
+import BlogPost from "./blog/BlogPost.js";
+import Profile from "./profile/Profile.js";
 
 function Routing(props) {
     const { blogPosts, selectBlog, selectHome } = props;

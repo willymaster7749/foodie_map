@@ -1,10 +1,10 @@
 import React, { useState, useCallback, Fragment } from "react";
 import PropTypes from "prop-types";
-import RegisterDialog from "./RegisterDialog";
-import TermsOfServiceDialog from "./TermsOfServiceDialog";
-import LoginDialog from "./LoginDialog";
-import ChangePasswordDialog from "./ChangePasswordDialog";
-import ModalBackdrop from "../../../shared/components/ModalBackdrop";
+import RegisterDialog from "./RegisterDialog.js";
+import TermsOfServiceDialog from "./TermsOfServiceDialog.js";
+import LoginDialog from "./LoginDialog.js";
+import ChangePasswordDialog from "./ChangePasswordDialog.js";
+import ModalBackdrop from "../../../shared/components/ModalBackdrop.js";
 
 // deciding where to go
 

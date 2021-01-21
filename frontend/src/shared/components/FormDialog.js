@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Dialog, DialogContent, Box, withStyles } from "@material-ui/core";
-import DialogTitleWithCloseIcon from "./DialogTitleWithCloseIcon";
+import DialogTitleWithCloseIcon from "./DialogTitleWithCloseIcon.js";
 
 const styles = (theme) => ({
     dialogPaper: {
