@@ -116,6 +116,7 @@ export default class Map extends React.Component {
 
         // the function responsible for the list on the left of the map
         function buildLocationList(data) {
+            alert("fuck");
             data.forEach(function (store, i) {
                 /**
                  * Create a shortcut for `store.properties`,
@@ -539,18 +540,18 @@ export default class Map extends React.Component {
             var top_ten = BillboardAPI();
             button[0].addEventListener("click", function (e) {
                 if (state == 0) {
-                    var listings = document.getElementById("listings");
-                    listings.innerHTML = "";
-                    buildLocationList(top_ten);
+                    // var listings = document.getElementById("listings");
+                    // listings.innerHTML = "";
+                    // buildLocationList(top_ten);
                     state = 1;
                     button[0].setAttribute(
                         "style",
                         "background-color: black; color: white;"
                     );
                 } else {
-                    var listings = document.getElementById("listings");
-                    listings.innerHTML = "";
-                    buildLocationList(stores);
+                    // var listings = document.getElementById("listings");
+                    // listings.innerHTML = "";
+                    // buildLocationList(stores);
                     state = 0;
                     button[0].setAttribute(
                         "style",
