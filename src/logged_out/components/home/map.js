@@ -51,7 +51,6 @@ export default class Map extends React.Component {
             zoom: this.state.zoom,
         });
         CommonAPI();
-        console.log("finding store");
         var stores = JSON.parse(localStorage.getItem("Database"));
         //var stores = [RandomAPI()];
         //var stores = BillboardAPI();
@@ -547,7 +546,6 @@ export default class Map extends React.Component {
             // var top_ten = BillboardAPI();
             button[0].addEventListener("click", function (e) {
                 alert("fuck");
-                console.log("topten click");
                 // if (state == 0) {
                 //     var listings = document.getElementById("listings");
                 //     listings.innerHTML = "";
