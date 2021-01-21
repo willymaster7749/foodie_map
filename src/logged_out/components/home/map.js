@@ -51,6 +51,7 @@ export default class Map extends React.Component {
             zoom: this.state.zoom,
         });
         CommonAPI();
+        console.log("finding store");
         var stores = JSON.parse(localStorage.getItem("Database"));
         //var stores = [RandomAPI()];
         //var stores = BillboardAPI();
@@ -63,16 +64,23 @@ export default class Map extends React.Component {
 
         /* add the layer of store info */
         map.on("load", function (e) {
+            alert("loading");
+            console.log("loading...");
             /* Add the data to your map as a layer */
             map.addSource("places", {
                 type: "geojson",
                 data: stores,
             });
 
+            console.log("1");
             buildLocationList(stores);
+            console.log("2");
             random(stores);
+            console.log("3");
             zoom_button();
+            console.log("4");
             topTen(stores);
+            console.log("5");
             addMarkers();
         });
 
@@ -116,7 +124,6 @@ export default class Map extends React.Component {
 
         // the function responsible for the list on the left of the map
         function buildLocationList(data) {
-            alert("fuck");
             data.forEach(function (store, i) {
                 /**
                  * Create a shortcut for `store.properties`,
@@ -537,27 +544,29 @@ export default class Map extends React.Component {
         function topTen(stores) {
             var button = document.getElementsByClassName("topTen");
             var state = 0;
-            var top_ten = BillboardAPI();
+            // var top_ten = BillboardAPI();
             button[0].addEventListener("click", function (e) {
-                if (state == 0) {
-                    // var listings = document.getElementById("listings");
-                    // listings.innerHTML = "";
-                    // buildLocationList(top_ten);
-                    state = 1;
-                    button[0].setAttribute(
-                        "style",
-                        "background-color: black; color: white;"
-                    );
-                } else {
-                    // var listings = document.getElementById("listings");
-                    // listings.innerHTML = "";
-                    // buildLocationList(stores);
-                    state = 0;
-                    button[0].setAttribute(
-                        "style",
-                        "background-color: white; color: black;"
-                    );
-                }
+                alert("fuck");
+                console.log("topten click");
+                // if (state == 0) {
+                //     var listings = document.getElementById("listings");
+                //     listings.innerHTML = "";
+                //     buildLocationList(top_ten);
+                //     state = 1;
+                //     button[0].setAttribute(
+                //         "style",
+                //         "background-color: black; color: white;"
+                //     );
+                // } else {
+                //     var listings = document.getElementById("listings");
+                //     listings.innerHTML = "";
+                //     buildLocationList(stores);
+                //     state = 0;
+                //     button[0].setAttribute(
+                //         "style",
+                //         "background-color: white; color: black;"
+                //     );
+                // }
             });
         }
 
