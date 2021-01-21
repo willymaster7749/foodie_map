@@ -58,22 +58,25 @@ export default class Map extends React.Component {
         console.log("map", stores);
 
         stores.forEach(function (store, i) {
+            console.log("each", i);
             store.properties.id = i;
         });
 
+        buildLocationList(stores);
+        random(stores);
+        zoom_button();
+        topTen(stores);
+        addMarkers();
+
         /* add the layer of store info */
         map.on("load", function (e) {
+            console.log("enter the loading");
             /* Add the data to your map as a layer */
             map.addSource("places", {
                 type: "geojson",
                 data: stores,
             });
-
-            buildLocationList(stores);
-            random(stores);
-            zoom_button();
-            topTen(stores);
-            addMarkers();
+            console.log("phase 2");
         });
 
         function addMarkers() {
