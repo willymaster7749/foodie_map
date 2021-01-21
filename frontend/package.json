@@ -33,9 +33,7 @@
         "react-router-dom": "^5.2.0",
         "react-scripts": "^4.0.1",
         "recharts": "^1.8.5",
-        "socket.io-client": "^3.0.5"
-    },
-    "devDependencies": {
+        "socket.io-client": "^3.0.5",
         "@testing-library/jest-dom": "^5.11.6",
         "@testing-library/react": "^11.2.2",
         "@testing-library/user-event": "^12.5.0"
