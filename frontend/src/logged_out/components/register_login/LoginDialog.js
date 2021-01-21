@@ -17,11 +17,11 @@ import {
     FormControlLabel,
     withStyles,
 } from "@material-ui/core";
-import FormDialog from "../../../shared/components/FormDialog.js";
-import HighlightedInformation from "../../../shared/components/HighlightedInformation.js";
-import ButtonCircularProgress from "../../../shared/components/ButtonCircularProgress.js";
-import VisibilityPasswordTextField from "../../../shared/components/VisibilityPasswordTextField.js";
-import { SocketContext } from "../../../context/socket.js";
+import FormDialog from "../../../shared/components/FormDialog";
+import HighlightedInformation from "../../../shared/components/HighlightedInformation";
+import ButtonCircularProgress from "../../../shared/components/ButtonCircularProgress";
+import VisibilityPasswordTextField from "../../../shared/components/VisibilityPasswordTextField";
+import { SocketContext } from "../../../context/socket";
 import AuthService from "../../../services/auth.service.js";
 
 // this file is responsible for the log in popup

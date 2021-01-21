@@ -1,11 +1,10 @@
+import data from "./logged_in/dummy_data/persons";
+
 // import { set } from "mongoose";
-import { SOCKET_URL } from "./config.js";
 const io = require("socket.io-client");
 
 // define socket.io to establish connection between client and server
-const socket = io(SOCKET_URL, {
-    secure: true,
-});
+const socket = io("http://localhost:4000", { secure: true });
 
 // database for common API
 // var DATABASE = [];

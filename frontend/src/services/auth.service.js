@@ -1,5 +1,5 @@
 import axios from "axios";
-import { FindRestaurantsAPI } from "../commonAPI.js";
+import { FindRestaurantsAPI } from "../commonAPI";
 
 const API_URL = "http://localhost:4000/api/auth/";
 

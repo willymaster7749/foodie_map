@@ -4,8 +4,14 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "build": "cd frontend/; npm install",
-        "start": "cd frontend/; npm run start",
-        "heroku-prebuild": "cd frontend/"
+        "start": "cd frontend && yarn start",
+        "server": "cd backend && yarn server"
+    },
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "esm": "^3.2.25",
+        "express": "^4.17.1",
+        "nodemon": "^2.0.6",
+        "react-router-dom": "^5.2.0"
     }
 }
