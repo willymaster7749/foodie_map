@@ -1,5 +1,3 @@
-import data from "./logged_in/dummy_data/persons";
-
 // import { set } from "mongoose";
 const io = require("socket.io-client");
 
