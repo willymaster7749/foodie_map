@@ -1,0 +1,416 @@
+.sidebarStyle {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 12px;
+    background-color: #404040;
+    color: #ffffff;
+    z-index: 1 !important;
+    padding: 6px;
+    font-weight: bold;
+}
+
+.mapContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#site_logo {
+    width: 4vh;
+    height: 4vh;
+    margin-top: 0vh;
+}
+
+.mapboxgl-ctrl-logo {
+    display: none !important;
+}
+
+.mapboxgl-ctrl-top-center {
+    top: 30%;
+    right: 1%;
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.mapboxgl-ctrl-top-center .mapboxgl-ctrl {
+    margin: 10px 0 0 10px;
+}
+
+.mapboxgl-ctrl-group > button {
+    width: 50px;
+    height: 50px;
+}
+
+.marker {
+    border: none;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-image: url(./assets/circle.png);
+    background-color: rgba(255, 164, 91, 1);
+}
+
+.mapboxgl-popup {
+    padding-bottom: 50px;
+}
+
+/* 
+The following are the css for map and list
+*/
+
+body {
+    color: #404040;
+    font: 400 15px/22px "Source Sans Pro", "Helvetica Neue", Sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 22px;
+    margin: 0;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 20px 2px;
+}
+
+a {
+    color: #404040;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #101010;
+}
+
+.sidebar {
+    background-color: #fbf6f0;
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.pad2 {
+    padding: 20px;
+}
+
+.map {
+    position: absolute;
+    left: 25%;
+    width: 75%;
+    top: 0;
+    bottom: 0;
+    margin-top: 65px;
+}
+
+.heading {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px;
+    margin-top: 65px;
+}
+
+.heading h1 {
+    display: inline-block;
+    vertical-align: "top";
+}
+
+.heading .topTen {
+    font-weight: 400;
+    font-family: "Times New Roman", Times, serif;
+    border: 2px solid black;
+    padding: 2%;
+    margin-left: 5%;
+}
+
+.heading .topTen:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.05) perspective(1px);
+}
+
+.listings {
+    height: 90%;
+    overflow: scroll;
+    padding-bottom: 60px;
+}
+
+.listings .item {
+    display: block;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.listings .item:last-child {
+    border-bottom: none;
+}
+
+.listings .item .title {
+    display: block;
+    color: black;
+    font-weight: 450;
+    height: 2vh;
+}
+
+.listings .item .title small {
+    font-weight: 400;
+}
+
+.listings .item.active .title,
+.listings .item .title:hover {
+    color: #ffa45b;
+}
+
+.listings .item.active {
+    background-color: #f8f8f8;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    border-left: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffa45b;
+    border-radius: 0;
+}
+
+.clearfix {
+    display: block;
+}
+
+.clearfix::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* 
+The following are for the markers on the map 
+*/
+
+.mapboxgl-popup-close-button {
+    display: none;
+}
+
+.mapboxgl-popup-content {
+    font: 400 15px/22px "Source Sans Pro", "Helvetica Neue", Sans-serif;
+    padding: 0;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.mapboxgl-popup-content-wrapper {
+    padding: 1%;
+}
+
+.mapboxgl-popup-content h3 {
+    background: #ffa45b;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    display: block;
+    padding: 10px;
+    border-radius: 3px 3px 0 0;
+    font-weight: 700;
+    margin-top: -15px;
+    border-radius: 10px 10px 0 0;
+}
+
+.mapboxgl-popup-content h4 {
+    margin: 0;
+    display: block;
+    padding: 10px;
+    font-weight: 400;
+}
+
+.mapboxgl-popup-content div {
+    padding: 10px;
+}
+
+.mapboxgl-container .leaflet-marker-icon {
+    cursor: pointer;
+}
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+    margin-top: 15px;
+}
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
+    border-bottom-color: #91c949;
+}
+
+#time:hover {
+    /*  Making button bigger on hover  */
+    transform: scale(1.1) perspective(1px);
+}
+
+#close:hover {
+    /*  Making button bigger on hover  */
+    transform: scale(1.1) perspective(1px);
+}
+
+/* css for the time schedule popup
+
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* the css for the button on top of a map */
+
+.container {
+    position: relative;
+}
+
+#random {
+    background-color: rgb(218, 247, 166, 0.6);
+    border-radius: 10px;
+    border: 3px solid#FFC300;
+    color: #ff5733;
+    opacity: 0.8;
+    padding: 0px 12px;
+    position: absolute;
+    left: 750px;
+    top: 510px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+#random h1 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+#random:hover {
+    background-color: rgb(218, 247, 166, 0.8);
+    transform: scale(1.05) perspective(1px);
+}
+
+#scrollZoom {
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+    padding: 0px 8px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 995px;
+    top: 510px;
+    z-index: 5;
+    cursor: pointer;
+    border: 2px solid rgb(136, 136, 136, 0.2);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+#scrollZoom:hover {
+    background-color: #efefef;
+}
+
+#scrollZoom img {
+    height: 40px;
+    width: 40px;
+    padding: 0px 3px 3px 0;
+    margin: 8px 1px 0 0;
+}
+
+/* the css for the time popup */
+
+.timeline div {
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.timeline {
+    background-color: black;
+}

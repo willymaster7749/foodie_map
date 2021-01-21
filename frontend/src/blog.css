@@ -1,0 +1,36 @@
+.lemon .motto {
+    font-weight: 1000;
+    font-size: 110px;
+    color: white;
+    line-height: 140px;
+    padding-top: 12%;
+    margin-left: 5%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: left;
+}
+
+.quote {
+    font-weight: 400;
+    font-size: 30px;
+    margin-left: 60%;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.content {
+    height: 50%;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.content h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 1000px;
+    font-size: 50px;
+    padding: 0px 10px;
+    color: black;
+    margin: 5% 0 0 5%;
+    text-align: left;
+    line-height: 60px;
+}

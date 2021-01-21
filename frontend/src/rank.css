@@ -1,0 +1,120 @@
+/* the following css are for the picture block*/
+
+.pic_container {
+    height: 60vh;
+    background-color: #27b2a4;
+    text-align: center;
+    margin: 15vh 10vh;
+    background-size: cover;
+    padding: 20px 0;
+}
+
+.pic_container .motto {
+    font-weight: 1000;
+    font-size: 70px;
+    color: white;
+    line-height: 90px;
+    margin-left: 5%;
+    padding-bottom: 0;
+    text-align: left;
+}
+
+.pic_container span {
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.pic_container h2 {
+    font-family: "Didot";
+    font-weight: 700px;
+    font-size: 30px;
+    color: white;
+    line-height: 45px;
+    margin: 0 0 0 5%;
+    text-align: left;
+}
+
+.pic_container p {
+    display: inline-block;
+    font-family: "Times New Roman", Times, serif;
+    border: 2px solid white;
+    font-weight: 800;
+    font-size: 30px;
+    color: white;
+    margin: 0 12% 0 0;
+    padding: 1% 2%;
+}
+
+.pic_container p:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* the following are for the ranking part */
+
+.ranking {
+    height: 140vh;
+    background-color: #27b2a4;
+    text-align: center;
+    margin: 10vh 0 0 0;
+    background-size: cover;
+    text-align: center;
+}
+
+.ranking .topic {
+    font-weight: 1000;
+    font-size: 80px;
+    color: white;
+    line-height: 90px;
+    padding-bottom: 0;
+    /* border: 2px solid white; */
+    padding: 3% 0;
+}
+
+.ranking .list_container {
+    /* border: 2px solid green; */
+    height: 600px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ranking .pair_container {
+    /* border: 1px solid red; */
+    height: 120px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pair_container .item {
+    display: inline-block;
+    /* border: 1px solid gold; */
+    border-radius: 6px;
+    height: 100px;
+    width: 45%;
+    margin: 1px 5px;
+}
+
+.item h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: white;
+    /* border: 1px solid white; */
+    line-height: 70px;
+    padding-bottom: 0;
+    text-align: left;
+    /* border: 2px solid white; */
+    padding: 3% 3%;
+}
+
+.pair_container .item:hover {
+    transform: scale(1.05) perspective(1px);
+    transition: 0.3s;
+    cursor: pointer;
+}
