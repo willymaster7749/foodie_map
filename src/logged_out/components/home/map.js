@@ -543,28 +543,28 @@ export default class Map extends React.Component {
         function topTen(stores) {
             var button = document.getElementsByClassName("topTen");
             var state = 0;
-            // var top_ten = BillboardAPI();
+            var top_ten = BillboardAPI();
             button[0].addEventListener("click", function (e) {
                 alert("fuck");
-                // if (state == 0) {
-                //     var listings = document.getElementById("listings");
-                //     listings.innerHTML = "";
-                //     buildLocationList(top_ten);
-                //     state = 1;
-                //     button[0].setAttribute(
-                //         "style",
-                //         "background-color: black; color: white;"
-                //     );
-                // } else {
-                //     var listings = document.getElementById("listings");
-                //     listings.innerHTML = "";
-                //     buildLocationList(stores);
-                //     state = 0;
-                //     button[0].setAttribute(
-                //         "style",
-                //         "background-color: white; color: black;"
-                //     );
-                // }
+                if (state == 0) {
+                    var listings = document.getElementById("listings");
+                    listings.innerHTML = "";
+                    buildLocationList(top_ten);
+                    state = 1;
+                    button[0].setAttribute(
+                        "style",
+                        "background-color: black; color: white;"
+                    );
+                } else {
+                    var listings = document.getElementById("listings");
+                    listings.innerHTML = "";
+                    buildLocationList(stores);
+                    state = 0;
+                    button[0].setAttribute(
+                        "style",
+                        "background-color: white; color: black;"
+                    );
+                }
             });
         }
 
